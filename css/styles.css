@@ -5,6 +5,7 @@
     --acent-color: #2196F3;
     --background-color-dark: #2F303A;
     --background-color-grey: #F5F4FA;
+    --background-color-logo: #AFB1B8;
 }
 
 body {
@@ -114,6 +115,7 @@ ul, ol {
 }
 
 .header-mail {
+    display: flex;
     margin-right: 50px;
 }
 
@@ -128,6 +130,14 @@ margin-right: 50px;
     color: var(--first-color-text);
 }
 
+.contact-block {
+    display: flex;
+    justify-self:center;
+}
+
+.contact-icon {
+    padding: 0;
+}
 /* hero */
 
 
@@ -199,9 +209,10 @@ margin-right: 50px;
     width: 270px;
 }
 
-.benefits-item::before {
-    content: "";
-    display: block;
+.benefits-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 120px;
     background-color: var(--background-color-grey);
     border-radius: 4px;
@@ -296,6 +307,7 @@ margin-right: 50px;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 
 .teamt-item {
@@ -314,6 +326,36 @@ margin-right: 50px;
 
 .teamt-foto {
     margin-bottom: 30px;
+}
+.team-soc-connect {
+    display: flex;
+    justify-content: center;
+
+}
+.team-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--acent-color-background-text);
+    border-radius: 50%;
+}
+
+.team-soc-link:hover, .team-soc-link:focus {
+    background-color: var(--acent-color);
+}
+
+.team-soc-logo {
+    fill: var(--background-color-logo);
+}
+
+.team-soc-link:hover .team-soc-logo, .team-soc-link:focus .team-soc-logo {
+    fill: var(--acent-color-background-text);
+}
+
+.team-soc-ikon:not(:last-child) {
+    margin-right: 10px;
 }
 
 
@@ -338,9 +380,10 @@ margin-right: 50px;
 }
 
 
-.portfolio-btn:hover {
+.portfolio-btn:hover, .portfolio-btn:focus {
     background-color: var(--acent-color);
     color: var(--acent-color-background-text);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-btn {
@@ -376,6 +419,9 @@ margin-right: 50px;
     margin-bottom: 30px;
 }
 
+.project-item:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .project-name {
     font-weight: 700;
     font-size: 18px;
@@ -395,6 +441,28 @@ margin-right: 50px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+/*regular-customers*/
+.regular-customers-ul {
+    display: flex;
+
+}
+
+.regular-custom-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.regular-custom-item {
+    border: 1px solid var(--background-color-logo);
+    border-radius: 4px;
+}
+
+.regular-custom-box {
+    padding: 16px 32px;
+}
+
+.regular-custom-icon {
+    
 }
 
 /* footer */
